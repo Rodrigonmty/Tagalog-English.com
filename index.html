@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+  <meta charset="UTF-8">
+  <title>Tagalog-English Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container" id="quiz-container">
+  <h2>English Quiz</h2>
+  <div id="question-container">
+    <p id="question-text">1. Ano ang English ng "Bahay"?</p>
+    <input type="text" id="answer" placeholder="Ilagay ang sagot...">
+    <button onclick="checkAnswer()">Ipadala</button>
+    <div id="message"></div>
+  </div>
+</div>
+
+<!-- Video and relapse messages -->
+<div id="videoContainer" style="display: none;">
+  <div class="video-box">
+    <video id="rewardVideo" width="100%" autoplay controls>
+      <source src="video.mp4" type="video/mp4">
+      Hindi sinusuportahan ang video ng browser mo.
+    </video>
+  </div>
+  <div class="relapse-box" id="relapseBox">
+    <!-- Random relapse-style words will appear here -->
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
